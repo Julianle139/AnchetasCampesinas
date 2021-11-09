@@ -1,0 +1,30 @@
+.d-inline-block{
+ border-radius: 50%;
+}
+.navbarr{
+    background-color: #212529;
+    height: 65px;
+}
+.cont-logo{
+    margin-left:10px;
+}
+@media(max-width: 480px){
+    .cont-logo{
+        width: 100px;
+    }
+    .cont-logo a{
+        font-size: 18.5px;
+    }
+}
+.cont-button{
+    margin-right: 10px;
+}
+.cont-logo a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+.cont-logo a:hover{
+    color: white;
+}
