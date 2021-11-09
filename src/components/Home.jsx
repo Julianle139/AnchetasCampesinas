@@ -21,8 +21,8 @@ export default function Home() {
          <LoginButton/>
         <div className="cont">
             <div className="cont-home">
-                <h1>Sistema Gestión de Mercado Campesino.</h1>
-                <h2>Prueba</h2>
+                <h1>Sistema Gestión de Anchetas Campesinas.</h1>
+                <h2>Prueba Final</h2>
                 <p>Aquí puede realizar tareas de gestión como registrar, actualizar y consultar ventas. Consultar nuestro portafolio de productos</p>
             </div>
             <Contact/>
