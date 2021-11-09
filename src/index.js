@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider 
-          domain= "mercacampe.us.auth0.com" 
+          domain= "anchetascampesinas.us.auth0.com" 
           clientId = "1O96RCo1b8D3LpbOH7nz8UQYjiUzpQKk" 
           redirectUri={window.location.origin} >
       <App />
