@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
-import Button from 'react-bootstrap/Button'
+//import Button from 'react-bootstrap/Button'
 import '../styles/Logout.css'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 
@@ -11,9 +11,9 @@ export default function Logout() {
     function closeSesion(){
         let timerInterval
         Swal.fire({
-          title: 'Cerrando sesion',
-          html: 'I will close in <b></b> milliseconds.',
-          timer: 2000,
+          title: 'Cerrando ...',
+          html: 'Closing <b></b> milliseconds.',
+          timer: 1800,
           timerProgressBar: true,
           didOpen: () => {
             Swal.showLoading()
@@ -28,7 +28,7 @@ export default function Logout() {
         }).then((result) => {
           
           if (result.dismiss === Swal.DismissReason.timer) {
-            console.log('I was closed by the timer')
+            console.log('Closing by timer')
           }
         })
     }

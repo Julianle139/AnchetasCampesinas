@@ -14,16 +14,15 @@ export default function Home() {
         <Button variant="primary" disabled>
         <Spinner as="span"  animation="grow" size="sm" role="status" aria-hidden="true"/>Loading...</Button></div>;
       }
-
     return (
         <>
         
          <LoginButton/>
         <div className="cont">
             <div className="cont-home">
-                <h1>Sistema Gestión de Anchetas Campesinas.</h1>
-                <h2>Prueba Final</h2>
-                <p>Aquí puede realizar tareas de gestión como registrar, actualizar y consultar ventas. Consultar nuestro portafolio de productos</p>
+                <h1>Anchetas Campesinas</h1>
+                <div> </div>
+                <h2>Productos de alta calidad y naturales</h2>
             </div>
             <Contact/>
         </div>

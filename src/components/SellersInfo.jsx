@@ -1,10 +1,8 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import "../styles/SellersInfo.css";
-
 import Form from 'react-bootstrap/Form'
 import Button from "react-bootstrap/Button";
-
 import { Link } from "react-router-dom";
 
 function SellersInfo() {
@@ -18,44 +16,8 @@ function SellersInfo() {
     },
     {
       id: 2,
-      nombre: "Pedro",
-      apellido: "Ruiz",
-      estado: ""
-    },
-    {
-      id: 3,
-      nombre: "Marcos",
-      apellido: "Arango",
-      estado: ""
-    },
-    {
-      id: 4,
-      nombre: "Fernando",
-      apellido: "Perez",
-      estado: ""
-    },
-    {
-      id: 5,
-      nombre: "Cristina",
-      apellido: "Lopez",
-      estado: ""
-    },
-    {
-      id: 6,
-      nombre: "Daniel",
-      apellido: "Acevedo",
-      estado: ""
-    },
-    {
-      id: 7,
-      nombre: "Laura",
-      apellido: "Garcia",
-      estado: ""
-    },
-    {
-      id: 8,
-      nombre: "Andrea",
-      apellido: "Ruiz",
+      nombre: "Andres",
+      apellido: "Gonzales",
       estado: ""
     },
   ] 

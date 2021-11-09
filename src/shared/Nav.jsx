@@ -9,13 +9,11 @@ function Nav() {
      
          <div className="cont-logo"> 
             <Navbar.Brand href="/SistemaGestion">
-              <img alt=""src={logo} width="30" height="30" className="d-inline-block align-top"/>{' '}
-             Mercados Campesinos!
+              <img alt=""src={logo} width="40" height="40" className="d-inline-block align-top"/>{' '}
+             Anchetas Campesinas!
             </Navbar.Brand>
           </div>
-         
       </div>       
     )
 }
-
 export default Nav
