@@ -1,6 +1,6 @@
 //Ruta conexion con base de datos
 export let Path = {
-  url: "https://mercadoscampesinosbackend.herokuapp.com/api",
+  url: "https://anchetascampesinasbackend.herokuapp.com/api",
 };
 
 

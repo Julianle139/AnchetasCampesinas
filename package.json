@@ -1,6 +1,6 @@
 {
-  "name": "mercadoscampesinos",
-  "version": "0.1.0",
+  "name": "AnchetasCampesinas",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
@@ -50,9 +50,9 @@
       "last 1 safari version"
     ]
   },
-  "description": "App de mercados campesinos",
+  "description": "App de anchetas campesinas",
   "main": "index.js",
-  "repository": "https://github.com/Julianle139/MercadosCampesinos.git",
+  "repository": "https://github.com/Julianle139/AnchetasCampesinas.git",
   "author": "Julian Gallo <julianleonardogallo@gmail.com>",
   "license": "MIT"
 }
