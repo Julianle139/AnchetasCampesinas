@@ -1,0 +1,98 @@
+.body{
+    background-color: yellow;
+}
+.cont{
+    text-align: center;
+}
+.cont h1{
+    margin-top: 0px;
+}
+.cont-buttons{
+    width: 50%;
+    position: relative;
+    bottom: 82px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    left: 435px;
+    padding: 30px;
+    gap: 15px;
+}
+.btn-productos,
+.btn-usuarios{
+    width: 100%;
+}
+.cont-profile{
+    position: relative;
+    bottom: 53px;
+    width: 15%;    
+    text-align: center;
+    float: right;
+    margin: 0px 40px 0px 0px;
+}
+.cont-profile img{
+    border-radius: 50%;
+    width: 40px;
+    position: relative;
+    right: 30px;
+}
+.cont-profile p{
+    font-size: 10px;
+    color: white;
+    position: relative;
+    right: 30px;
+}
+.spinner{
+    width: 200px;
+    margin: 80px 0px 0px 80px;
+}
+.mando{
+    width: 50px;
+    height: 50px;
+}
+.cont-father{
+    height: 10px;
+    
+}
+.notify{
+    display: flex;
+    width: 20%;
+    margin: 0px 0px 0px 75px;
+}
+.btn-warning {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border-radius: 50%;
+}
+.fa-hand-point-left{
+    font-size: 20px;
+}
+.hand{
+    margin: 10px 0px 0px 5px;
+}
+@media(max-width: 480px){
+    .cont-profile{
+        text-align: center;
+        left: -70px;
+        top: 3px;
+    }
+    .cont-profile p{
+     
+        color: rgb(0, 0, 0);
+       
+    }
+}
+@media(max-width: 480px){
+    .cont h1 {
+        margin-top: -90px;
+    }
+}
+@media(max-width: 480px){
+    .cont-buttons{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        bottom: 120px;
+        left: 0px;
+    }
+}

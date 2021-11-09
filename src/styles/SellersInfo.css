@@ -1,0 +1,19 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.cont-table{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.title{
+    margin-bottom: 30px;
+}
+@media(max-width: 420px){
+    .cont-table{
+        width: 85%;
+        margin-top: 30%;
+        margin: 0 auto;
+    }
+}
