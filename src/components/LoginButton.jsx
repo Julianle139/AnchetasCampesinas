@@ -7,14 +7,13 @@ import google from '../logo/google.svg'
 export default function LoginButton() {
     const { loginWithRedirect } = useAuth0();
     return (
-        <div className="cont-button" >
-                
+        <div className="cont-button" >               
             <Link to="/SistemaGestion">
                 <div class="google-btn" onClick={() => loginWithRedirect()}>
                 <div class="google-icon-wrapper">
                     <img class="google-icon" src= {google} alt = "Logo"/>
                 </div>
-                <p class="btn-text"><b>Sign in with google</b></p>
+                <p class="btn-text"><b>Entra con Google</b></p>
             </div></Link>
         </div>
     )

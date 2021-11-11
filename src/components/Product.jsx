@@ -26,35 +26,7 @@ const Product = () => {
       ...producto,
       [event.target.name]: event.target.value,
     });
-    //console.log(producto);
   };
-
-  /*let buscarImagen = async () => {
-    const { value: file } = await Swal.fire({
-      title: "Seleccione una imagen",
-      input: "file",
-      inputAttributes: {
-        accept: "image/*",
-        "aria-label": "Upload your profile picture",
-      },
-    });
-
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        Swal.fire({
-          title: "Tu imagen seleccionada",
-          imageUrl: e.target.result,
-          imageAlt: "The uploaded picture",
-        });
-        setProducto({
-          ...producto,
-          ["url"]: e.target.result,
-        });
-      };
-      reader.readAsDataURL(file);
-    }
-  };*/
 
   const guardar = (event) => {
     event.preventDefault();
@@ -62,7 +34,7 @@ const Product = () => {
     if (producto.cantity < 0) {
       Swal.fire({
         icon: "warning",
-        title: "La cantidad debe ser igual o mayor a 0",
+        title: "El precio debe ser mayor a 0",
       });
     } else {
       setProduct(producto)
@@ -124,16 +96,7 @@ const Product = () => {
                       value={producto.cantity}
                     />
                   </div>
-                  {/*<div className="mb-3">
-                    <button
-                      className="btn btn-secondary btn-lg"
-                      type="button"
-                      id="url"
-                      onClick={buscarImagen}
-                    >
-                      Imagen
-                    </button>
-                  </div>*/}
+                 
                   <div className="mb-3">
                     <input
                       type="text"
@@ -145,19 +108,19 @@ const Product = () => {
                       value={producto.url}
                     />
                   </div>
-                  <div className="input-group mb-3">
+                  {/* <div className="input-group mb-3">
                     <label
                       className="input-group-text"
                       htmlFor="inputGroupSelect01"
                     >
-                      Categoria
+                      
                     </label>
                     <select className="form-select" id="inputGroupSelect01">
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option value="1">Uno</option>
+                      <option value="2">Dos</option>
+                      <option value="3">Tres</option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="mb-3">
                     <textarea
                       className="form-control"
@@ -185,7 +148,7 @@ const Product = () => {
                   </div>
                   */}
                   <button className="btn btn-success btn-block" type="submit">
-                    Guardar
+                    Guardar 
                   </button>
                 </Form>
               </div>
@@ -210,23 +173,8 @@ const Product = () => {
                   <b>Cantidad:</b> {producto.cantity}
                 </p>
                 <p>
-                  <b>Categoria:</b>
-                </p>
-                <p>
                   <b>Descripcion:</b> {producto.description}
                 </p>
-                {/*
-                <div
-                  className={
-                    producto.disponible
-                      ? "alert alert-success"
-                      : "alert alert-danger"
-                  }
-                  role="alert"
-                >
-                  {producto.disponible ? "Activo" : "Inactivo"}
-                </div>
-                */}
               </div>
             </div>
           </div>

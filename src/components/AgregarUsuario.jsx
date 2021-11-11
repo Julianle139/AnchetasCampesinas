@@ -151,33 +151,34 @@ class AgregarUsuario extends Component{
       render(){
         return(
           <>
-          <div align="center"><h2 >Usuarios</h2></div>
+          <div ><h1 class="text-warning text-center" >Usuarios</h1></div>
           <Container className="justify-content center">
           <div className="cont-form1" align="center">
           <Form onSubmit={this.addUser}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3 text-white bg-dark" controlId="formBasicEmail">
                 <Form.Label>Nombre</Form.Label>
                 <Form.Control name="nombre" onChange={this.handleChange} value={this.state.nombre}  type="text" placeholder="Ingrese el nombre del usuario" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3 text-white bg-dark" controlId="formBasicEmail">
                 <Form.Label>Email</Form.Label>
                 <Form.Control name="email" onChange={this.handleChange} value={this.state.email} type="text" placeholder="Ingrese el email" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3 text-white bg-dark" controlId="formBasicPassword">
                 <Form.Label>Rol</Form.Label>
                 <Form.Control name="estado" onChange={this.handleChange} value={this.state.estado} type="text" placeholder="Ingrese el Rol" />
             </Form.Group>
-            <div className="boton">
-            <h5 align="center" >Agrega un usuario con el rol de administrador o usuario<br/> Actualiza información o elimina usuarios</h5>
-            <Button variant="primary" type="submit" className="btn" >
+            <h5 align="center" class="text-white bg-success">Agrega un usuario con el rol de administrador o usuario Actualiza información o elimina usuarios</h5>
+            
+            <div align="center" >
+            <Button variant="primary"  className="justify-content center">
                 Agregar Usuario{''} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                   <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                   <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
                 </svg>
             </Button>
-            <Button variant="success" type="submit" className="btn" onClick={this.actualizar}>
+            <Button variant="warning" className="justify-content center text-white" onClick={this.actualizar}>
                 Actualizar{''}<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                     <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
@@ -192,10 +193,10 @@ class AgregarUsuario extends Component{
       <Table striped bordered hover>
               <thead>
                 <tr>
-                  <th>Nombre</th>
-                  <th>Email</th>
-                  <th>Rol</th>
-                  <th>Editar | Eliminar</th>
+                  <th class="text-primary bg-white">Nombre</th>
+                  <th class="text-danger bg-white">Email</th>
+                  <th class="text-success bg-white">Rol</th>
+                  <th class="text-warning bg-white">Editar | Eliminar</th>
                 </tr>
               </thead>
               <tbody>
@@ -203,11 +204,11 @@ class AgregarUsuario extends Component{
                 return (
                     <tr key={usuario._id}>
                       
-                      <td>{usuario.nombre} </td>
-                      <td>{usuario.email} </td>
-                      <td>{usuario.estado} </td>                 
-                      <td>
-                          <Button variant="light" onClick={() => this.editUser(usuario._id)}>
+                      <td class="text-dark bg-white">{usuario.nombre} </td>
+                      <td class="text-dark bg-white">{usuario.email} </td>
+                      <td class="text-dark bg-white">{usuario.estado} </td>                 
+                      <td class="text-dark bg-white">
+                          <Button variant="success" onClick={() => this.editUser(usuario._id)}>
                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                                   <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
                                   </svg>

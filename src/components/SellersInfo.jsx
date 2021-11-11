@@ -8,29 +8,13 @@ import { Link } from "react-router-dom";
 function SellersInfo() {
 
   let usuarios = [
-    {
-      id: 1,
-      nombre: "Julian",
-      apellido: "Castañeda",
-      estado: ""
-    },
-    {
-      id: 2,
-      nombre: "Andres",
-      apellido: "Gonzales",
-      estado: ""
-    },
   ] 
-
   return (
     <div>
-      
-      <div className="cont-table">
-        
+      <div className="cont-table">       
         <Table striped bordered hover>
           <thead>
             <tr>
-
               <th>Nombre</th>
               <th>Apellido</th>
               <th>Estado</th>

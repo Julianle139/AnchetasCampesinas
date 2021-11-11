@@ -1,13 +1,11 @@
 import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
-//import Button from 'react-bootstrap/Button'
 import '../styles/Logout.css'
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 
 
 export default function Logout() {
     const { logout } = useAuth0();
-
     function closeSesion(){
         let timerInterval
         Swal.fire({
@@ -35,7 +33,7 @@ export default function Logout() {
 
     return (
         <div className="cont-buttonn" onClick={() => closeSesion()} >
-            <button onClick={() => logout()} variant="danger" type="submit" className="boton-off"><i class="fas fa-power-off"></i></button>
+            <button onClick={() => logout()} variant="danger" type="submit" className="boton-off"><i class="fas fa-power-off text-danger"></i></button>
         </div>
     )
 }

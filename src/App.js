@@ -16,23 +16,16 @@ function App() {
   const { isAuthenticated } = useAuth0();
   return (
     <> 
-      <BrowserRouter>
-        
-        <Nav />
+      <BrowserRouter>        
+        <Nav/>
         {isAuthenticated ? (<><SistemaGestion /></>) : (<Home />)}
-
-          <Switch>
-            
-              
+          <Switch>             
               <Route path="/AgregarUsuario">
               <AgregarUsuario />
               </Route>
-
               <Route path="/list-products">
                 <ListProducts />
               </Route>
-
-
               <Route path="/AgregarVentas">
 
                 <AgregarVentas />
