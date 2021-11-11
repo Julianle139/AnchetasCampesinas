@@ -172,13 +172,13 @@ class AgregarUsuario extends Component{
             <h5 align="center" class="text-white bg-success">Agrega un usuario con el rol de administrador o usuario Actualiza información o elimina usuarios</h5>
             
             <div align="center" >
-            <Button variant="primary"  className="justify-content center">
+            <Button variant="primary" type="submit"  className="justify-content center">
                 Agregar Usuario{''} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                   <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                   <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
                 </svg>
             </Button>
-            <Button variant="warning" className="justify-content center text-white" onClick={this.actualizar}>
+            <Button variant="warning" type="submit" className="justify-content center text-white" onClick={this.actualizar}>
                 Actualizar{''}<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                     <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
