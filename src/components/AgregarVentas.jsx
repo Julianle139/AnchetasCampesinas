@@ -251,7 +251,7 @@ class AgregarVentas extends Component{
                 <th class="text-success bg-white align-middle">ID Cliente</th>
                 <th class="text-secondary bg-white align-middle">Vendedor</th>
                 <th class="text-info bg-white">Cantidad<br/> (Libras)</th>
-                <th class="text-danger bg-white align-middle">Precio</th>
+                <th class="text-danger bg-white align-middle">Precio <br/> (Unidad)</th>
                 <th class="text-danger bg-white align-middle">Precio Total</th>                 
                 <th class="text-warning bg-white align-middle">Editar | Eliminar</th>
               </tr>
