@@ -245,13 +245,13 @@ class AgregarVentas extends Component{
   <Table striped bordered hover>
             <thead>
               <tr>
-                <th class="text-primary bg-white">Producto</th>
-                <th class="text-danger bg-white">Cliente</th>
-                <th class="text-success bg-white">ID Cliente</th>
-                <th class="text-dark bg-white">Vendedor</th>
-                <th class="text-secondary bg-white">Precio</th>
-                <th class="text-info bg-white">Cantidad</th>
-                <th class="text-warning bg-white">Editar | Eliminar</th>
+                <th class="text-primary bg-white align-middle">Producto</th>
+                <th class="text-dark bg-white align-middle">Cliente</th>
+                <th class="text-success bg-white align-middle">ID Cliente</th>
+                <th class="text-secondary bg-white align-middle">Vendedor</th>
+                <th class="text-info bg-white">Cantidad<br/> (Libras)</th>
+                <th class="text-danger bg-white align-middle">Precio</th>             
+                <th class="text-warning bg-white align-middle">Editar | Eliminar</th>
               </tr>
             </thead>
             <tbody>
@@ -263,8 +263,9 @@ class AgregarVentas extends Component{
                     <td class="text-dark bg-white">{venta.cliente} </td>
                     <td class="text-dark bg-white">{venta.idCliente} </td>
                     <td class="text-dark bg-white">{venta.vendedor} </td>
-                    <td class="text-dark bg-white">{venta.precio} </td>
-                    <td class="text-dark bg-white">{venta.cantidad} </td>                   
+                    <td class="text-dark bg-white">{venta.cantidad} </td>  
+                    <td class="text-dark bg-white">{venta.precio * venta.cantidad} </td>
+                                 
                     <td class="text-dark bg-white">
                         <Button variant="success" onClick={() => this.editSell(venta._id)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
