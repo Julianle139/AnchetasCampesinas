@@ -9,8 +9,7 @@ export default function Logout() {
     function closeSesion(){
         let timerInterval
         Swal.fire({
-          title: 'Cerrando ...',
-          html: 'Closing <b></b> milliseconds.',
+          html: 'Cerrando en <b></b> millisegundos',
           timer: 1800,
           timerProgressBar: true,
           didOpen: () => {

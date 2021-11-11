@@ -151,7 +151,7 @@ class AgregarUsuario extends Component{
       render(){
         return(
           <>
-          <div ><h1 class="text-warning text-center" >Usuarios</h1></div>
+          <div ><h1 class="text-warning text-center  p-1 ">Usuarios</h1></div>
           <Container className="justify-content center">
           <div className="cont-form1" align="center">
           <Form onSubmit={this.addUser}>

@@ -179,12 +179,12 @@ class AgregarVentas extends Component{
     render(){
       return(
         <>
-        <div align="center" > <h1 class="text-danger"> Ventas</h1> </div>
+        <div align="center" > <h1 class="text-danger p-1"> Ventas</h1> </div>
           <br />
           <Container>
           <Form onSubmit={this.addSell}>
               <div className="cont-fatherr">
-                <div><h5 align="center" class="bg-white text-primary"> Control de las ventas en<br/> Anchetas Campesinas </h5></div>
+                <div><h5 align="center" class="bg-white text-primary"> Ventas en<br/> Anchetas Campesinas </h5></div>
                <div className="cont-form">
                   <Form.Group className="mb-3 bg-dark text-white" controlId="formBasicEmail" align="center">
                       <Form.Label>Producto</Form.Label>

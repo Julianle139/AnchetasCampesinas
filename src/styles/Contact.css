@@ -7,22 +7,24 @@
 }
 .facebook{
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
     color: #3b5998;
 }
 .instagram{
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
     color: #f09433; 
-    color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+   
    
 }
 .youtube{
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
     color: #c4302b;
+}
+.twitter{
+    cursor: pointer;
+    font-size: 35px;
 }
 @media(max-width: 480px){
     .cont-icons{

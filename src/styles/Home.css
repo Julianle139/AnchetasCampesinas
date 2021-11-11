@@ -7,13 +7,13 @@ body{
 }
 .cont-home{
     color: #212529;
-    width: 50%;
+    width: 35%;
     margin-left: 120px;
     margin-top: 95px;
     
     line-height: 3em;
     margin-bottom: 140px;
-    text-align: left;
+    text-align: center;
 }
 @media(max-width:480px){
     .cont-home{

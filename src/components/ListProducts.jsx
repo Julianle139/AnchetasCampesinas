@@ -50,7 +50,7 @@ function ListProducts() {
     <>
     
             
-          
+    <div align="center" > <h1 class="text-primary p-1"> Productos</h1> </div>       
     <Fragment>  
       <Container className="mb-2 mt-0">
       <div className="cont-form1">
@@ -60,8 +60,9 @@ function ListProducts() {
               className="mr-4"
               aria-label="Search"
             />
+            
+            
             <br />
-        
         <Row>
           <div className="col-12">
             <Link to="/product/new">

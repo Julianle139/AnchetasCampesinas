@@ -19,11 +19,13 @@ export default function Home() {
         
          <LoginButton/>
         <div className="cont">
+        
             <div className="cont-home">
-                <h1>Anchetas Campesinas</h1>
+                <h1 class="text-dark bg-white">Anchetas Campesinas</h1>
                 <div> </div>
-                <h2>Productos de alta calidad y naturales</h2>
+                <h2 class="text-dark bg-white ">Productos de alta calidad y naturales</h2>
             </div>
+            
             <Contact/>
         </div>
         </>
