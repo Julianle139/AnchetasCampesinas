@@ -12,7 +12,7 @@ export default function Home() {
     if (isLoading) {
         return <div className="spinner">       
         <Button variant="primary" disabled>
-        <Spinner as="span"  animation="grow" size="s" role="status" aria-hidden="true"/>Loading...</Button></div>;
+        <Spinner as="span"  animation="grow" size="s" role="status" aria-hidden="true"/>Cargando...</Button></div>;
       }
     return (
         <>

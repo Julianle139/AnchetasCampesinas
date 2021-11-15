@@ -109,6 +109,7 @@ class AgregarVentas extends Component{
       deleteSell(id) {
         if(Swal.fire({
           title: '¿Esta seguro?',
+          text: "Puedes deshacer los cambios!",
           icon: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#d33',
@@ -118,6 +119,7 @@ class AgregarVentas extends Component{
           if (result.isConfirmed) {
             Swal.fire(
               'Eliminada!',
+              'La venta se ha eliminado',
               'success'
             )
           }
@@ -171,8 +173,7 @@ class AgregarVentas extends Component{
           .then(data => {
             this.setState({ventas: data,
             productoBackup:data});
-            console.log(this.state.ventas);
-            
+            console.log(this.state.ventas);           
           });
       }
     

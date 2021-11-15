@@ -55,8 +55,8 @@
 }
 .notify{
     display: flex;
-    width: 20%;
-    margin: 0px 0px 0px 75px;
+    width: 0%;
+    margin: 0px 0px 0px 1280px;
 }
 .btn-warning {
     color: #000;

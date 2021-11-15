@@ -16,34 +16,24 @@ export default function SistemaGestion() {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [show, setShow] = useState(true);
   const notify = () => {
-    toast(`!Secciones disponibles (Usuarios, Productos y Ventas)!`, {position: toast.POSITION.TOP_CENTER })
+    toast(`!Secciones disponibles (Usuarios, Productos y Ventas)!`, {position: toast.POSITION.BOTTOM_CENTER })
   }
 
   if (isLoading) {
     return <div className="spinner">
       <Button variant="primary" disabled>     
-    <Spinner
-      as="span"
-      animation="grow"
-      size="sm"
-      role="status"
-      aria-hidden="true"
-    />
+    <Spinner as="span" animation="border"   size="sm" role="status" aria-hidden="true"/>
     Cargando...
   </Button></div>;
   }
  
   return (
-
     isAuthenticated && (
      <>
-     
-     
-    
       <div className="cont-father">      
         <div className="cont-profile">
             <img className="imp-p" src={user.picture} alt={user.name} />
-            <p>{user.email}</p>
+            <p>{user.name}</p>
         </div>
         <div className="cont">
                 <div className="cont-buttons">
@@ -55,12 +45,9 @@ export default function SistemaGestion() {
       </div>
       <Logout />
   <div className="notify">
-       <Button variant="info" onClick={notify} 
-       ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-fill text-white" viewBox="0 0 16 16">
-       <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-       <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-     </svg></Button>{' '}
-     <div className="hand text-danger bg-white" ><i className="far fa-hand-point-left"></i></div>
+       <Button variant="info" onClick={notify} >        
+       <img src="https://culturacion.com/wp-content/uploads/2009/03/signo-admiracion.jpg" alt="Admir" width ="30"/>
+    </Button>{' '}
   </div>
   
  <div className="toa">
@@ -84,7 +71,6 @@ export default function SistemaGestion() {
   <br/>
   <div align="center" > <h1 class="text-light bg-dark"> Arma tu Ancheta con los mejores productos<br/> campesinos del pais</h1> </div> */}
      </>
-    )
-    
+    )   
   );
 };
